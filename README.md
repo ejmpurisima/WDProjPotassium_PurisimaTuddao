@@ -62,6 +62,12 @@ Using arrays, we can create a table at the end of each game webpage that will su
 ## Texts
 
 **Heart Specialists:**
+These characters specialize in the heart games. 
+
+
+
+2. Mira Kano(加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. During her first appearance, she 
+
 
 
 
