@@ -64,15 +64,14 @@ Using arrays, we can create a table at the end of each game webpage that will su
 **Heart Specialists:**
 These characters specialize in the heart games. 
 
-
-
-2. Mira Kano(加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. During her first appearance, she 
-
-
 1. Arisu Ryohei
 Ryōhei Arisu (有栖 良平, Arisu Ryouhei) is the protagonist of Alice in Borderland. He is played by Kento Yamazaki in the live action, and his speciality is Hearts. Arisu is a tall and lanky young man with shaggy black hair that slightly covers his eyes. In the original world, Arisu is a moody, unemployed teenager who spends his time indulging in his gaming addiction. He is best friends with Dakichi Karube and Chota Segawa—and the three of them gets transported to the Borderlands together.
 
 As seen during his time in the Tokyo Borderlands, Arisu is a very caring and kind individual, whose first instinct is to place the lives of others over his. He shows compassion to new people he meets in games and tries to understand everyone's story and how they came to be. This is why, alongside his intelligence and critical-thinking, his abilities stand out as a Hearts player because of his understanding of other people's core values that gives him power to manipulate them emotionally.
+
+2. Mira Kano(加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. She is a manipulative, graceful character who is known for her sadistic smile. For most of her screen time, she seems to enjoy seeing other people's suffering. She is good at reading others, becoming useful during the Queen of Hearts game where she is almost successful in manipulating Arisu into admitting he quits the game. 
+
+During her first appearance, she is seen wearing a cropped, black off shoulder top with a asymmetrical skirt. During the Queen of hearts game, on the rooftop, she is wearing a sleeveless floral dress with long black gloves. Throughout the series, she has long black hair and full bangs. 
 
 
 
