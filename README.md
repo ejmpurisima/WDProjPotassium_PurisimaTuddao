@@ -59,5 +59,9 @@ Using arrays, we can create a table at the end of each game webpage that will su
 
 ![About Us Wireframe](assets/AboutUs.png)
 
+## Texts
+
+**Heart Specialists:**
+
 
 
