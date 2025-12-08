@@ -69,9 +69,16 @@ Ryōhei Arisu (有栖 良平, Arisu Ryouhei) is the protagonist of Alice in Bord
 
 As seen during his time in the Tokyo Borderlands, Arisu is a very caring and kind individual, whose first instinct is to place the lives of others over his. He shows compassion to new people he meets in games and tries to understand everyone's story and how they came to be. This is why, alongside his intelligence and critical-thinking, his abilities stand out as a Hearts player because of his understanding of other people's core values that gives him power to manipulate them emotionally.
 
-2. Mira Kano(加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. She is a manipulative, graceful character who is known for her sadistic smile. For most of her screen time, she seems to enjoy seeing other people's suffering. She is good at reading others, becoming useful during the Queen of Hearts game where she is almost successful in manipulating Arisu into admitting he quits the game. 
 
-During her first appearance, she is seen wearing a cropped, black off shoulder top with a asymmetrical skirt. During the Queen of hearts game, on the rooftop, she is wearing a sleeveless floral dress with long black gloves. Throughout the series, she has long black hair and full bangs. 
+2. Mira Kano (加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. She is a manipulative, graceful character who is known for her sadistic smile. For most of her screen time, she seems to enjoy seeing other people's suffering. She is good at reading others, becoming useful during the Queen of Hearts game where she is almost successful in manipulating Arisu into admitting he quits the game. 
+
+During her first appearance, she is seen wearing a cropped, black off shoulder top with a asymmetrical skirt. During the Queen of hearts game, on the rooftop, she is wearing a sleeveless floral dress with long black gloves. Throughout the series, she has long black hair and full bangs.
+
+
+3. Enji Matsushita (マツシタ エンジ, Matsushita Enji) is a minor character and a citizen who plays as the Jack of Hearts. In the Netflix Adaptation, he is featured in his own game, "Solitary Confinement" in Season 2. He pretends to be a meek sidekick of Banda, another Hearts specialist, to hide his role as the "Jack of Hearts" and stay in the game for as long as possible. At the end, his true colors were revealed by Banda, Yaba, and Chishiya. 
+
+Enji looks like an ordinary man as his only characteristic that stands out was his hair—the long bangs that cover half his face. In Solitary Confinement, he wears a striped white shirt, dark pants, and a gray cardigan.
+
 
 
 
