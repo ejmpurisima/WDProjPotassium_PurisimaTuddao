@@ -9,9 +9,32 @@
 </head>
 
 <body>
+<div class="topbar">
+    <img src="Joker_29.png" class="menu-button" onclick="openMenu()">
+
+    <h1 class="title">Alice In Borderland</h1>
+</div>
+
+<div id="drawerMenu" class="drawer">
+    <div class="drawer-content">
+        <img src="Joker_29.png" class="drawer-close" onclick="closeMenu()">
+
+        <a href="#">Clubs</a>
+        <a href="#">Diamonds</a>
+        <a href="#">Spades</a>
+        <a href="#">Hearts</a>
+        <a href="#">About Us</a>
+    </div>
+</div>
+
+
+
+
 <header class = "site-header">
     <img src = "header.png" alt = "Website Header">
 </header>
+
+<h1 class="welcome">Welcome to the Borderland</h1>
 
 <p class = "desc">The website explores Alice in Borderland, a Japanese survival thriller Netflix adaptation series directed by Shinsuke Sato from a manga originally written and illustrated by Haro Aso. 
     Alice in Borderland follows a group of people who are transported to a parallel, deserted Tokyo called the Borderland where they must play dangerous, life-or-death games to survive.</p>
@@ -23,3 +46,14 @@
     <div style="height: 10px; background-color: #ffffff;"></div>
     <p>&copy; 2025 BOI </p>
 </footer>
+
+
+<script>
+function openMenu() {
+    document.getElementById("drawerMenu").style.width = "100%";
+}
+
+function closeMenu() {
+    document.getElementById("drawerMenu").style.width = "0";
+}
+</script>

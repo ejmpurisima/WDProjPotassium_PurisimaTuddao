@@ -1,38 +1,146 @@
+
 header {
-    width: 100%;
-    height: 350px;
+    width: 100vw; 
+    height: 350px; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     color: #fff;
+    overflow: hidden;   
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
 }
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome {
+    margin-top: 40px;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
-    width: auto;
-    height: auto;
+    padding: 0;          
+    margin: 0;            
     text-align: center;
 
-    background-image: url('background\ 1.png');
+    background-image: url('background 1.png');
     background-size: cover;
     background-color: #400808;
+
     font-size: 36px;
     color: #fff;
+
+    min-width: 1200px;
 }
 
-.desc{
-    margin-top: 175px;
+
+.desc {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .footer{
-    text-align: right;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.gelasio-<boi> {
-    font-family: "Gelasio", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
+.topbar {
+    position: fixed;       
+    top: 0;         
+    left: 0;
+    width: 100%;
+    height: 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    z-index: 9999;
 
+    background-image: url('navbar.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.topbar .title {
+    color: white;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: 50px;
+    font-family: 'Times New Roman', serif;
+}
+
+
+
+
+.menu-button {
+    height: 60px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;  
+    backdrop-filter: blur(3px); 
+    background: rgba(0, 0, 0, 0.55); 
+    overflow: hidden;
+    transition: width 0.35s ease;
+    z-index: 999999;
+}
+
+.drawer-content {              
+    width: 250px;
+    height: 100%;
+    padding-top: 80px;
+
+    background-image: url("menu.png"); 
+    background-size: cover; 
+    background-repeat: repeat;
+    background-position: center;
+}
+
+
+.drawer-close {
+    height: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.drawer-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.drawer-content a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
