@@ -77,10 +77,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.topbar.shadow {
-box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
 
