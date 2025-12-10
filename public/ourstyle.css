@@ -13,7 +13,7 @@ header img {
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Linden Hill', 'Times New Roman', serif;
     padding: 0;          
     margin: 0;            
     text-align: center;
@@ -36,7 +36,7 @@ body {
     text-align: center;
 }
 
-.text-box h1 {
+h1 {
     font-family: 'Manufacturing Consent', sans-serif;
     font-weight: 300;
     font-size: 50px;
@@ -54,8 +54,14 @@ body {
     text-align: left;
 }
 
+.symbol-container img {
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    margin-top: 0;
+}
 
-.footer{
+.footer {
     text-align: center;
     margin-top: 50px;
 }
