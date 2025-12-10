@@ -6,31 +6,46 @@
 
     <title> Beyond the Border: A Guide to Alice in Borderland </title>
     <link rel="stylesheet" href="ourstyle.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 <div class="topbar">
     <img src="Joker_29.png" class="menu-button" onclick="openMenu()">
-
-    <h1 class="title">Alice In Borderland</h1>
+    <span class="open-menu-text">Open Menu</span>
+        <h1 class="title">Alice In Borderland</h1>
 </div>
 
 <div id="drawerMenu" class="drawer">
     <div class="drawer-content">
         <img src="Joker_29.png" class="drawer-close" onclick="closeMenu()">
+        <span id="menuLabel" class="menu-label">MENU</span>
 
-        <a href="#">Clubs</a>
-        <a href="#">Diamonds</a>
-        <a href="#">Spades</a>
-        <a href="#">Hearts</a>
-        <a href="#">About Us</a>
+<a href="#" class="icon-link" data-label="Clubs">
+    <img src="clubs.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Diamonds">
+    <img src="diamonds.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Spades">
+    <img src="spades.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Hearts">
+    <img src="hearts.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="About Us">
+    <img src="about.png" class="menu-icon">
+</a>
+
     </div>
 </div>
-
 
 
 
