@@ -20,14 +20,13 @@ header img {
 }
 
 .welcome {
-    margin-top: 40px;
     font-size: 60px;
     color: #ffffff;
     text-align: left;
     font-family: 'Manufacturing Consent', sans-serif;
     font-weight: 300;
     letter-spacing: 3px;
-    margin-left: 50px;
+    margin-top: 50px;
 }
 
 
