@@ -23,9 +23,10 @@ header img {
     margin-top: 40px;
     font-size: 60px;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 3px;
+    margin: auto;
 }
 
 
@@ -49,9 +50,10 @@ body {
 .desc {
     margin-top: 40px;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 
