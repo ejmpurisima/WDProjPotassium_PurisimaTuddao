@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Beyond the Border: A Guide to Alice in Borderland </title>
+    <link rel="stylesheet" href="ourstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="topbar">
+    <img src="Joker_29.png" class="menu-button" onclick="openMenu()">
+    <span class="open-menu-text">Open Menu</span>
+        <h1 class="title">Alice In Borderland</h1>
+</div>
+
+<div id="drawerMenu" class="drawer">
+    <div class="drawer-content">
+        <img src="Joker_29.png" class="drawer-close" onclick="closeMenu()">
+        <span id="menuLabel" class="menu-label">MENU</span>
+
+<a href="index.html" class="icon-link" data-label="Home">
+    <img src="home.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Clubs">
+    <img src="clubs.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Diamonds">
+    <img src="diamonds.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="Spades">
+    <img src="spades.png" class="menu-icon">
+</a>
+
+<a href="hearts.html" class="icon-link" data-label="Hearts">
+    <img src="hearts.png" class="menu-icon">
+</a>
+
+<a href="#" class="icon-link" data-label="About Us">
+    <img src="about.png" class="menu-icon">
+</a>
+
+    </div>
+</div>
+
+    <header class="site-header">
+        <img src="heartsheader.png" alt="Website Header">
+    </header>
+
+    <div class="content-wrapper">
+        <div class="left-text">
+            <h1 class="welcome">Arisu Ryohei</h1>
+            <p class="desc"> Ryōhei Arisu (有栖 良平, Arisu Ryouhei) is the protagonist of Alice in Borderland. He is played by Kento Yamazaki in the live action, and his speciality is Hearts. Arisu is a tall and lanky young man with shaggy black hair that slightly covers his eyes. In the original world, Arisu is a moody, unemployed teenager who spends his time indulging in his gaming addiction. He is best friends with Dakichi Karube and Chota Segawa—and the three of them gets transported to the Borderlands together. </p>
+
+ <p class="desc">As seen during his time in the Tokyo Borderlands, Arisu is a very caring and kind individual, whose first instinct is to place the lives of others over his. He shows compassion to new people he meets in games and tries to understand everyone's story and how they came to be. This is why, alongside his intelligence and critical-thinking, his abilities stand out as a Hearts player because of his understanding of other people's core values that gives him power to manipulate them emotionally.</p>
+        </div>
+
+        <div class="right-image">
+            <img src="arisu.jpg" alt="Character" class="character-photo">
+        </div>
+    </div>
+
+    <footer>
+        <div style="height: 10px; background-color: #ffffff;"></div>
+        <p>&copy; 2025 BOI</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById("drawerMenu").style.width = "100%";
+        }
+        function closeMenu() {
+            document.getElementById("drawerMenu").style.width = "0";
+        }
+    </script>
+</body>
+</html>

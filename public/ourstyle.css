@@ -79,6 +79,10 @@ body {
     background-position: center;
 }
 
+.topbar.shadow {
+box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
 
 .topbar .title {
     color: white;
@@ -140,15 +144,15 @@ body {
     width: 100px;
     height: auto;
     display: block;
-    margin: 2px auto;
+    margin: -10px auto;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .menu-icon:hover {
     filter:
-        drop-shadow(0 0 12px rgb(137, 11, 11));
-        drop-shadow(0 0 28px rgb(137,11,11));
+        drop-shadow(0 0 12px rgb(137, 11, 11))
+        drop-shadow(0 0 28px rgb(137,11,11))
         drop-shadow(0 0 18px black);
         transform: scale(1.50);
 }
@@ -222,4 +226,54 @@ body {
 
 .menu-button:hover + .open-menu-text {
     opacity: 1;
+}
+
+
+.content-wrapper {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+width: 100%;
+padding: 40px;
+box-sizing: border-box;
+margin-top: 20px;
+gap: 40px;
+}
+
+
+.left-text {
+width: 55%; 
+text-align: left;
+}
+
+
+.right-image {
+width: 45%; 
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding-top: 30px;
+}
+
+
+.character-photo {
+width: 90%;
+max-width: 380px;
+height: auto;
+border-radius: 20px;
+object-fit: cover;
+box-shadow: 0 0 20px rgba(0,0,0,0.6);
+margin-top: 70px;
+}
+
+
+.desc {
+font-size: 20px;
+line-height: 1.5;
+}
+
+
+.welcome {
+font-size: 48px;
+margin-bottom: 10px;
 }
