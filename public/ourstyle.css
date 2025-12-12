@@ -160,8 +160,9 @@ h1 {
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
-    margin: 2px auto;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
 
@@ -172,7 +173,7 @@ h1 {
         drop-shadow(0 0 12px rgb(137, 11, 11))
         drop-shadow(0 0 28px rgb(137, 11, 11))
         drop-shadow(0 0 18px black);
-        transform: scale(1.50)
+        transform: scale(1.50);
 }
 
 .icon-link {
