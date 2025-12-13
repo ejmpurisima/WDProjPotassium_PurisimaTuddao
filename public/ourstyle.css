@@ -23,6 +23,8 @@ header img {
     margin-top: auto;
     margin-left: 40px;
     margin-right: 40px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 
@@ -49,7 +51,22 @@ body {
     text-align: justify;
     margin-left: 40px;
     margin-right: 40px;
+    font-size: 20px;
+    line-height: 1.5;
 }
+
+.text-box {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+
+    font-size: 26px;
+    line-height: 1.7;
+    text-align: justify;
+
+    color: #ffffff;
+}
+
 /* menu stuff */
 .topbar {
     position: fixed; 
@@ -260,14 +277,48 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 30px rgba(0,0,0,0.7);
 }
 
-
-.desc {
-font-size: 20px;
-line-height: 1.5;
+.symbol-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 60px 0;
+    flex-wrap: wrap;
 }
 
+.symbol-image {
+    width: 120px;
+    height: auto;
+    transition: 
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
 
-.welcome {
-font-size: 48px;
-margin-bottom: 10px;
+.symbol-link:hover .symbol-image {
+    transform: scale(1.15);
+    filter:
+        drop-shadow(0 0 12px rgb(180, 0, 0))
+        drop-shadow(0 0 25px rgb(120, 0, 0));
+}
+
+.vid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+    padding: 0 40px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.vid-box {
+    flex: 1 1 30%;
+    max-width: 420px;
+}
+
+.vid-box iframe {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
 }
