@@ -63,32 +63,81 @@
     </a>
 </div>
 
-    
 
-    <div class="content-wrapper">
-        <div class="left-text">
-            <h1 class="welcome">Arisu Ryohei</h1>
-            <p class="desc"> Ryōhei Arisu (有栖 良平, Arisu Ryouhei) is the protagonist of Alice in Borderland. He is played by Kento Yamazaki in the live action, and his speciality is Hearts. Arisu is a tall and lanky young man with shaggy black hair that slightly covers his eyes. In the original world, Arisu is a moody, unemployed teenager who spends his time indulging in his gaming addiction. He is best friends with Dakichi Karube and Chota Segawa—and the three of them gets transported to the Borderlands together. </p>
+<div class="results-screen">
+  <div class="screen-header">GAME RESULTS</div>
+  <div class="screen-content" id="screenContent">
+    <p class="screen-text">Click on any character to reveal their fate.</p>
+  </div>
+</div>
 
- <p class="desc">As seen during his time in the Tokyo Borderlands, Arisu is a very caring and kind individual, whose first instinct is to place the lives of others over his. He shows compassion to new people he meets in games and tries to understand everyone's story and how they came to be. This is why, alongside his intelligence and critical-thinking, his abilities stand out as a Hearts player because of his understanding of other people's core values that gives him power to manipulate them emotionally.</p>
-            
-            <h1 class="welcome"> Mira Kano</h1>
-            <p class="desc">Mira Kano (加納 未来, Kanou Mirai) is one of the antagonists in Alice in Borderland, played by Riisa Naka. She is a high-ranking member of "The Beach" who serves as the Queen of Hearts. She psychologically challenged players during her game of croquet. She is a manipulative, graceful character who is known for her sadistic smile. For most of her screen time, she seems to enjoy seeing other people's suffering. She is good at reading others, becoming useful during the Queen of Hearts game where she is almost successful in manipulating Arisu into admitting he quits the game.  </p>
-        <p class="desc">During her first appearance, she is seen wearing a cropped, black off shoulder top with a asymmetrical skirt. During the Queen of hearts game, on the rooftop, she is wearing a sleeveless floral dress with long black gloves. Throughout the series, she has long black hair and full bangs.</p>
+<div class="participants">
+  <img src="arisu.jpg" alt="Arisu" class="participant-icon" data-label="Arisu">
+<img src="karube.jpg" alt="Karube" class="participant-icon" data-label="Karube">
+<img src="chota.jpg" alt="Chota" class="participant-icon" data-label="Chota">
+<img src="shibuki.jpg" alt="Shibuki" class="participant-icon" data-label="Shibuki">
+
+</div>
 
 
-        <h1 class="welcome">Enji Matsushita</h1>
-        <p class="desc">Enji Matsushita (マツシタ エンジ, Matsushita Enji) is a minor character and a citizen who plays as the Jack of Hearts. In the Netflix Adaptation, he is featured in his own game, "Solitary Confinement" in Season 2. He pretends to be a meek sidekick of Banda, another Hearts specialist, to hide his role as the "Jack of Hearts" and stay in the game for as long as possible. At the end, his true colors were revealed by Banda, Yaba, and Chishiya. </p>
-        <p class="desc">Enji looks like an ordinary man as his only characteristic that stands out was his hair—the long bangs that cover half his face. In Solitary Confinement, he wears a striped white shirt, dark pants, and a gray cardigan.
-</p>
-    </div>
+<script>
+const screenContent = document.getElementById('screenContent');
 
-        <div class="right-image">
-            <img src="arisu.jpg" alt="Character" class="character-photo">
-             <img src="mira.png" alt="Character" class="character-photo">
-             <img src="enji.jpg" alt="Character" class="character-photo">
+const participants = {
+  'Arisu': {
+    name: 'Ryohei Arisu',
+    status: 'CLEARED',
+    text: 'Arisu survived the game by making smart choices and helping his friends.',
+    img: 'arisu.jpg'
+  },
+  'Karube': {
+    name: 'Daikichi Karube',
+    status: 'ELIMINATED',
+    text: 'Killed by collar explosion.',
+    img: 'karube.jpg'
+  },
+  'Chota': {
+    name: 'Chota Segawa',
+    status: 'ELIMINATED',
+    text: 'Killed by collar explosion.',
+    img: 'chota.jpg'
+  },
+  'Shibuki': {
+    name: 'Saori Shibuki',
+    status: 'ELIMINATED',
+    text: 'Killed by collar explosion.',
+    img: 'shibuki.jpg'
+  }
+};
+
+document.querySelectorAll('.participant-icon').forEach(icon => {
+  icon.addEventListener('click', () => {
+    const key = icon.alt;
+    const info = participants[key];
+
+    screenContent.style.opacity = 0;
+
+    setTimeout(() => {
+      screenContent.innerHTML = `
+        <div class="info-left">
+          <div class="character-name">${info.name}</div>
+          <div class="status ${info.status.toLowerCase()}">
+            STATUS: ${info.status}
+          </div>
+          <div class="info-text">${info.text}</div>
         </div>
-    </div>
+
+        <div class="info-right">
+          <img src="${info.img}" alt="${info.name}" class="character-image">
+        </div>
+      `;
+
+      screenContent.style.opacity = 1;
+    }, 200);
+  });
+});
+</script>
+
 
     <footer>
         <div style="height: 10px; background-color: #ffffff;"></div>
@@ -103,5 +152,13 @@
             document.getElementById("drawerMenu").style.width = "0";
         }
     </script>
+
+
+
+
+
+
+
+
 </body>
 </html>

@@ -79,6 +79,13 @@ During her first appearance, she is seen wearing a cropped, black off shoulder t
 
 Enji looks like an ordinary man as his only characteristic that stands out was his hair—the long bangs that cover half his face. In Solitary Confinement, he wears a striped white shirt, dark pants, and a gray cardigan.
 
+**Heart Specialists:**
+
+1. Seven of Hearts - Hide and Seek
+
+Rules:
+In this game, one player is randomly chosen as the wolf (seeker), while the others are lambs (hiders). 
+
 
 
 

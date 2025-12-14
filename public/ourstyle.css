@@ -369,3 +369,148 @@ margin-bottom: 20px;
         drop-shadow(0 0 18px rgb(220, 30, 30))
         drop-shadow(0 0 35px rgb(160, 0, 0));
 }
+
+
+/*game result screen*/
+
+.results-screen {
+  width: 100%;
+  max-width: 720px;
+  height: 320px;
+  margin: 40px auto;
+  background: radial-gradient(#111, #000);
+  border: 2px solid #700;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(255,0,0,0.2);
+  font-family: 'Courier New', monospace;
+  color: #fff;
+}
+
+.screen-header {
+  padding: 12px;
+  padding-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid #700;
+  letter-spacing: 2px;
+  padding-bottom: 50px;
+}
+
+.screen-content {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.screen-content img {
+  width: 120px;
+  border-radius: 6px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.cleared { color: #4cff4c; }
+.status.eliminated { color: #ff4c4c; }
+
+.screen-text {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.participants {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.participants img {
+  width: 100px; 
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+   border-radius: 12px;
+   margin-bottom: 100px;
+}
+
+.participants img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(255,0,0,0.6));
+}
+
+
+/* game result screen*/
+.game-screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 300px;
+
+  padding: 30px;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 16px;
+  margin-top: 30px;
+}
+
+
+.info-left {
+  width: 55%;
+  text-align: left;
+}
+
+.character-name {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.status {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.status.cleared {
+  color: #9cff9c;
+}
+
+.status.eliminated {
+  color: #c64949;
+}
+
+.info-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
+.info-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.character-image {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.screen-content {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/*end*/
