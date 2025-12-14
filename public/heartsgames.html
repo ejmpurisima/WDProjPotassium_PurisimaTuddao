@@ -11,59 +11,87 @@
 
 <body>
 <div class="topbar">
-    <img src="Joker_29.png" class="menu-button" onclick="openMenu()">
+    <img src="others/Joker_29.png" class="menu-button" onclick="openMenu()">
     <span class="open-menu-text">Open Menu</span>
         <h1 class="title">Alice In Borderland</h1>
 </div>
 
 <div id="drawerMenu" class="drawer">
     <div class="drawer-content">
-        <img src="Joker_29.png" class="drawer-close" onclick="closeMenu()">
+        <img src="others/Joker_29.png" class="drawer-close" onclick="closeMenu()">
         <span id="menuLabel" class="menu-label">MENU</span>
 
 <a href="index.html" class="icon-link" data-label="Home">
-    <img src="home.png" class="menu-icon">
+    <img src="others/home.png" class="menu-icon">
 </a>
 
 <a href="clubsspecialists.html" class="icon-link" data-label="Clubs">
-    <img src="clubs.png" class="menu-icon">
+    <img src="others/clubs.png" class="menu-icon">
 </a>
 
 <a href="diamondsspecialists.html" class="icon-link" data-label="Diamonds">
-    <img src="diamonds.png" class="menu-icon">
+    <img src="others/diamonds.png" class="menu-icon">
 </a>
 
 <a href="spadesspecialists.html" class="icon-link" data-label="Spades">
-    <img src="spades.png" class="menu-icon">
+    <img src="others/spades.png" class="menu-icon">
 </a>
 
 <a href="heartsspecialists.html" class="icon-link" data-label="Hearts">
-    <img src="hearts.png" class="menu-icon">
+    <img src="others/hearts.png" class="menu-icon">
 </a>
 
 <a href="#" class="icon-link" data-label="About Us">
-    <img src="about.png" class="menu-icon">
+    <img src="others/about.png" class="menu-icon">
 </a>
 
     </div>
 </div>
 
     <header class="site-header">
-        <img src="heartsheader.png" alt="Website Header">
+        <img src="headers/heartsheader.png" alt="Website Header">
     </header>
 
 
     <div class="icon-section">
     <a href="heartsgames.html" class="nav-icon active">
-        <img src="gamesbutton1.png" alt="Games">
+        <img src="others/gamesbutton1.png" alt="Games">
     </a>
 
     <a href="heartsspecialists.html" class="nav-icon">
-        <img src="specialistsbutton2.png" alt="Specialists">
+        <img src="others/specialistsbutton2.png" alt="Specialists">
     </a>
 </div>
 
 
+<div class="game-info">
+  <div class="game-text">
+    <h2>7 of Hearts — Hide and Seek</h2>
+
+    <p>
+      In this game, one participant is randomly chosen as the wolf (seeker),
+      while the other players are lambs (hiders). Players are allowed to take
+      any of the weapons/tools layed out on the table during the game. At the end
+      of the game, only the wolf will survive.
+    </p>
+
+    <p>
+      The game venue is at the Shinjuku Natural Botanical Garden. This is a large greenhouse
+      filled with plant life, trees, bushes and paths. The plants and space creates many
+      hiding spots that players can use to their advantage during the game.
+    </p>
+  </div>
+
+ <div class="game-images">
+    <img src="games/7ofhearts.webp" alt="Hearts Card" class="card-image">
+    <img src="games/hideandseekvenue.webp" alt="Game Venue" class="venue-image">
+</div>
+</div>
+
+
+
+
+<div class="results-container">
 <div class="results-screen">
   <div class="screen-header">GAME RESULTS</div>
   <div class="screen-content" id="screenContent">
@@ -72,11 +100,34 @@
 </div>
 
 <div class="participants">
-  <img src="arisu.jpg" alt="Arisu" class="participant-icon" data-label="Arisu">
-<img src="karube.jpg" alt="Karube" class="participant-icon" data-label="Karube">
-<img src="chota.jpg" alt="Chota" class="participant-icon" data-label="Chota">
-<img src="shibuki.jpg" alt="Shibuki" class="participant-icon" data-label="Shibuki">
 
+  <div class="row">
+    <img src="characs/arisu.jpg" alt="Arisu" class="participant-icon">
+    <img src="characs/chota.jpg" alt="Chota" class="participant-icon">
+    <img src="characs/karube.jpg" alt="Karube" class="participant-icon">
+    <img src="characs/usagi.jpg" alt="Usagi" class="participant-icon">
+  </div>
+
+
+  <div class="row">
+    <img src="characs/chishiya.jpg" alt="Chishiya" class="participant-icon">
+    <img src="characs/kuina.jpg" alt="Kuina" class="participant-icon">
+    <img src="characs/ann.jpg" alt="Ann" class="participant-icon">
+    <img src="characs/tatta.jpg" alt="Tatta" class="participant-icon">
+  </div>
+
+  
+  <div class="row">
+    <img src="characs/niragi.jpg" alt="Niragi" class="participant-icon">
+    <img src="characs/aguni.jpg" alt="Aguni" class="participant-icon">
+    <img src="characs/yaba.jpg" alt="Yaba" class="participant-icon">
+    <img src="characs/banda.jpg" alt="Banda" class="participant-icon">
+  </div>
+
+  <div class="row">
+    <img src="characs/mira.png" alt="Mira" class="participant-icon">
+  </div>
+</div>
 </div>
 
 
@@ -87,26 +138,80 @@ const participants = {
   'Arisu': {
     name: 'Ryohei Arisu',
     status: 'CLEARED',
-    text: 'Arisu survived the game by making smart choices and helping his friends.',
-    img: 'arisu.jpg'
+    text: 'Survived all hearts games.',
+    img: 'characs/arisu.jpg'
   },
   'Karube': {
     name: 'Daikichi Karube',
     status: 'ELIMINATED',
-    text: 'Killed by collar explosion.',
-    img: 'karube.jpg'
+    text: 'Killed by collar explosion during Hide and Seek.',
+    img: 'characs/karube.jpg'
   },
   'Chota': {
     name: 'Chota Segawa',
     status: 'ELIMINATED',
-    text: 'Killed by collar explosion.',
-    img: 'chota.jpg'
+    text: 'Killed by collar explosion during Hide and Seek',
+    img: 'characs/chota.jpg'
   },
-  'Shibuki': {
-    name: 'Saori Shibuki',
-    status: 'ELIMINATED',
-    text: 'Killed by collar explosion.',
-    img: 'shibuki.jpg'
+  'Usagi': {
+    name: 'Yuzuha Usagi',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/usagi.jpg'
+  },
+  'Chishiya': {
+    name: 'Shuntaro Chishiya',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/chishiya.jpg'
+  },
+  'Kuina': {
+    name: 'Hikari Kuina',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/Kuina.jpg'
+  },
+  'Ann': {
+    name: 'Rizuna Ann',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/ann.jpg'
+  },
+  'Tatta': {
+    name: 'Kodai Tatta',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/tatta.jpg'
+  },
+  'Niragi': {
+    name: 'Suguru Niragi',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/niragi.jpg'
+  },
+  'Aguni': {
+    name: 'Morizono Aguni',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/aguni.jpg'
+  },
+  'Yaba': {
+    name: 'Oki Yaba',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/yaba.jpg'
+  },
+  'Banda': {
+    name: 'Sunato Banda',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/banda.jpg'
+  },
+  'Mira': {
+    name: 'Mira Kano',
+    status: 'CLEARED',
+    text: 'Survived all hearts games.',
+    img: 'characs/mira.png'
   }
 };
 
