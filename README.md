@@ -79,13 +79,15 @@ During her first appearance, she is seen wearing a cropped, black off shoulder t
 
 Enji looks like an ordinary man as his only characteristic that stands out was his hair—the long bangs that cover half his face. In Solitary Confinement, he wears a striped white shirt, dark pants, and a gray cardigan.
 
-**Heart Specialists:**
+**Heart Games:**
 
 1. Seven of Hearts - Hide and Seek
 
 Rules:
 In this game, one player is randomly chosen as the wolf (seeker), while the others are lambs (hiders). 
 
+**Spades Specialists**
+1. Yuzuha Usagi (宇佐木 柚葉, Usagi Yuzuha) is one of the main characters played by Tao Tsuchiya. Her specialty is Spades. Usagi is an atheletic young woman with almond brown eyes and chin-length hair. Because of her experiences as a mountain climber, she has a strong physique and impressive endurance. This is seen in the series where she has the most confidence in her physical strength.
 
-
+Usagi is empathetic and often encourages her teammates in the games. She is both physically and mentally capable; she keeps her cool most of the time, but becomes emotional when it comes to Arisu or her father. Usagi is independent but also functions well in a team with her ability to work even with the least desirable comrades. However, she can also be naive and blinded by her emotions to make rational decisions.
 
