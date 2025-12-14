@@ -67,6 +67,48 @@ body {
     color: #ffffff;
 }
 
+
+.welcome {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Manufacturing Consent', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.desc {
+    width: calc(100%-40px);
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 60px
+}
+
+
+.text-box {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+    margin-bottom: 40px;
+
+
+    font-size: 26px;
+    line-height: 1.7;
+    text-align: justify;
+
+
+    color: #ffffff;
+}
+
+
 /* menu stuff */
 .topbar {
     position: fixed; 
