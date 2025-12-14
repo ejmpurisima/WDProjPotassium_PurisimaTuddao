@@ -91,3 +91,7 @@ In this game, one player is randomly chosen as the wolf (seeker), while the othe
 
 Usagi is empathetic and often encourages her teammates in the games. She is both physically and mentally capable; she keeps her cool most of the time, but becomes emotional when it comes to Arisu or her father. Usagi is independent but also functions well in a team with her ability to work even with the least desirable comrades. However, she can also be naive and blinded by her emotions to make rational decisions.
 
+**Diamonds Specialists**
+1. Shuntaro Chishiya (苣屋 駿太郎, Chishiya Shuntarou) is a major character in Alice in Borderland. He is played by Nijiro Murakami. His specialty is not clearly stated in the show, however, his promotional poster hints at Hearts, while the original manga character specializes in Diamonds. Chishiya has dyed platinum blonde hair that reaches his shoulders and a tiny mole under his eye. His outfit include an unzipped white jacket and white beach shorts.
+
+
