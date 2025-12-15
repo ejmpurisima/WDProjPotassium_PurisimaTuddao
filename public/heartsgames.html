@@ -159,8 +159,6 @@
 </div>
 
 
-
-
 <div class="results-container">
 <div class="results-screen">
   <div class="screen-header">GAME RESULTS</div>
@@ -201,145 +199,15 @@
 </div>
 </div>
 
-
-<script>
-const screenContent = document.getElementById('screenContent');
-
-const participants = {
-  'Arisu': {
-    name: 'Ryohei Arisu',
-    status: 'CLEARED',
-    text: 'Survived all hearts games.',
-    img: 'characs/arisu.jpg'
-  },
-  'Karube': {
-    name: 'Daikichi Karube',
-    status: 'ELIMINATED',
-    text: 'Killed by collar explosion during Hide and Seek.',
-    img: 'characs/karube.jpg'
-  },
-  'Chota': {
-    name: 'Chota Segawa',
-    status: 'ELIMINATED',
-    text: 'Killed by collar explosion during Hide and Seek',
-    img: 'characs/chota.jpg'
-  },
-  'Usagi': {
-    name: 'Yuzuha Usagi',
-    status: 'CLEARED',
-    text: 'Survived all hearts games.',
-    img: 'characs/usagi.jpg'
-  },
-  'Chishiya': {
-    name: 'Shuntaro Chishiya',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt and Solitary Confinement.',
-    img: 'characs/chishiya.jpg'
-  },
-  'Kuina': {
-    name: 'Hikari Kuina',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt.',
-    img: 'characs/Kuina.jpg'
-  },
-  'Ann': {
-    name: 'Rizuna Ann',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt.',
-    img: 'characs/ann.jpg'
-  },
-  'Tatta': {
-    name: 'Kodai Tatta',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt.',
-    img: 'characs/tatta.jpg'
-  },
-  'Niragi': {
-    name: 'Suguru Niragi',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt.',
-    img: 'characs/niragi.jpg'
-  },
-  'Aguni': {
-    name: 'Morizono Aguni',
-    status: 'CLEARED',
-    text: 'Survived Witch Hunt.',
-    img: 'characs/aguni.jpg'
-  },
-  'Yaba': {
-    name: 'Oki Yaba',
-    status: 'CLEARED',
-    text: 'Survived Solitary Confinement.',
-    img: 'characs/yaba.jpg'
-  },
-  'Banda': {
-    name: 'Sunato Banda',
-    status: 'CLEARED',
-    text: 'Survived Solitary Confinement.',
-    img: 'characs/banda.jpg'
-  },
-  'Mira': {
-    name: 'Mira Kano',
-    status: 'Eliminated',
-    text: 'Died as the Queen of Hearts in Croquet.',
-    img: 'characs/mira.png'
-  },
-  'Enji': {
-    name: 'Enji Matsushita',
-    status: 'ELIMINATED',
-    text: 'Died as the Jack of Hearts in Solitary Confinement.',
-    img: 'characs/enji.jpg'
-  }
-};
-
-document.querySelectorAll('.participant-icon').forEach(icon => {
-  icon.addEventListener('click', () => {
-    const key = icon.alt;
-    const info = participants[key];
-
-    screenContent.style.opacity = 0;
-
-    setTimeout(() => {
-      screenContent.innerHTML = `
-        <div class="info-left">
-          <div class="character-name">${info.name}</div>
-          <div class="status ${info.status.toLowerCase()}">
-            STATUS: ${info.status}
-          </div>
-          <div class="info-text">${info.text}</div>
-        </div>
-
-        <div class="info-right">
-          <img src="${info.img}" alt="${info.name}" class="character-image">
-        </div>
-      `;
-
-      screenContent.style.opacity = 1;
-    }, 200);
-  });
-});
-</script>
-
-
-    <footer>
-        <div style="height: 10px; background-color: #ffffff;"></div>
-        <p>&copy; 2025 BOI</p>
-    </footer>
-
-    <script>
-        function openMenu() {
-            document.getElementById("drawerMenu").style.width = "100%";
-        }
-        function closeMenu() {
-            document.getElementById("drawerMenu").style.width = "0";
-        }
-    </script>
-
-
-
-
-
-
+<footer class="site-footer">
+    <div class="footer-content">
+        <a href="sources.html" class="sources-btn">Sources</a>
+        <span class="copyright">© 2025 BOI</span>
+    </div>
+</footer>
+<script src="js/menu.js"></script>
+<script src="js/hearts-data.js"></script>
+<script src="js/result.js" defer></script>
 
 
 </body>
