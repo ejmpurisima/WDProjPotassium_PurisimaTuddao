@@ -682,3 +682,36 @@ margin-left: 10px;
 }
 
 /*about us*/
+.name {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Manufacturing Consent', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 90px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.info {
+    width: calc(100%-40px);
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 180px;
+}
+
+.dealers {
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 30px;
+    padding-top: 1px;
+    margin-right: 30px;
+}
