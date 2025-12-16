@@ -614,7 +614,7 @@ margin-left: 10px;
 }
 
 .site-footer {
-    background-image: url('footer.png');   /* SAME image as top bar */
+    background-image: url('footer.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
