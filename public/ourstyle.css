@@ -96,6 +96,18 @@ body {
     margin-bottom: 10px;
 }
 
+.welcome1 {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Manufacturing Consent', 'Times New Roman';
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
 .desc {
     width: calc(100%-40px);
     margin-top: 1px;
@@ -106,6 +118,22 @@ body {
     line-height: 1.5;
     margin-bottom: 1px;
 }
+
+.welcome:nth-of-type(2) {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Manufacturing Consent', 'Times New Roman';
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+
 
 .description {
     width: calc(100%-40px);
@@ -333,12 +361,17 @@ text-align: left;
     margin-bottom: 500px;
 }
 
-.right-image img[src*="mira.png"] {
-    margin-top: 400px;
-}
 
 .right-image img:nth-of-type(2) {
     margin-top: 250px;
+}
+
+.right-image img[src*="kyuma.jpg"] {
+    margin-top: 150px;
+}
+
+.right-image img[src*="usagi.jpg"] {
+    margin-top: 500px;
 }
 
 
