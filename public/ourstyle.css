@@ -73,8 +73,8 @@ body {
     text-align: left;
     font-family: 'Manufacturing Consent', 'Times New Roman';
     font-weight: 300;
-    letter-spacing: 2px;
-    margin-top: auto;
+    letter-spacing: 3px;
+    margin-top: 90px;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 48px;
@@ -83,13 +83,24 @@ body {
 
 .desc {
     width: calc(100%-40px);
-    margin-top: 10px;
+    margin-top: 50px;
     text-align: justify;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 60px
+    margin-bottom: 1px;
+}
+
+.description {
+    width: calc(100%-40px);
+    margin-top: 50px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 300px;
 }
 
 
@@ -284,7 +295,7 @@ align-items: flex-start;
 width: 100%;
 padding: 40px;
 box-sizing: border-box;
-margin-top: 20px;
+margin-top: 40px;
 gap: 40px;
 }
 
@@ -300,8 +311,8 @@ text-align: left;
     display: flex;
     flex-direction: column; 
     align-items: center;
-    gap: 50px;
-    padding-top: 40px;
+    gap: 90px;
+    padding-top: 1px;
 }
 
 
@@ -602,12 +613,12 @@ margin-left: 10px;
 }
 
 .site-footer {
-    background-image: url('footer.png');   /* SAME image as top bar */
+    background-image: url('footer.png'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    box-shadow: 0 -8px 20px rgba(0,0,0,0.7); /* shadow going upward */
+    box-shadow: 0 -8px 20px rgba(0,0,0,0.7);
     padding: 25px 40px;
 }
 
