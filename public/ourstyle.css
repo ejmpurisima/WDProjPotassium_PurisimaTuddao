@@ -63,7 +63,7 @@ body {
     font-size: 26px;
     line-height: 1.7;
 
-    text-align: center;
+    text-align: justify;
     color: #ffffff;
 }
 
@@ -104,7 +104,7 @@ body {
 }
 
 
-.text-box > p {
+div.text-box > p {
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 40px;
@@ -114,7 +114,9 @@ body {
     font-size: 26px;
     line-height: 1.7;
     text-align: justify;
-
+    justify-content: center;
+    hanging-punctuation: none;
+    text-indent: 0;
 
     color: #ffffff;
 }
