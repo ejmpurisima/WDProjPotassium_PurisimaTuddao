@@ -1,7 +1,7 @@
 document.querySelectorAll(".profile").forEach(profile => {
-    const img = profile.querySelector(".profile-img");
+    const image = profile.querySelector(".character-photo");
 
-    img.addEventListener("click", () => {
+    image.addEventListener("click", () => {
         profile.classList.toggle("active");
     });
 });

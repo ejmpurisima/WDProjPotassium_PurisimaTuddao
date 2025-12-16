@@ -38,6 +38,21 @@ h1 {
 
 }
 
+.main-content-box {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 80px 60px;
+
+    background: rgba(39, 7, 7, 0.85); 
+    backdrop-filter: blur(6px);
+
+    border-radius: 28px;
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.8),
+        inset 0 0 30px rgba(120, 0, 0, 0.25);
+}
+
+
 body {
     font-family: 'STIX Two Text', 'Times New Roman', serif;
     padding: 0;          
@@ -295,9 +310,9 @@ display: flex;
 justify-content: space-between;
 align-items: flex-start;
 width: 100%;
-padding: 40px;
+padding: 1px;
 box-sizing: border-box;
-margin-top: 40px;
+margin-top: 1px;
 gap: 40px;
 }
 
@@ -314,7 +329,22 @@ text-align: left;
     flex-direction: column; 
     align-items: center;
     gap: 90px;
-    padding-top: 100px;
+    padding-top: 80px;
+    margin-bottom: 500px;
+}
+
+.right-image img[src*="mira.png"] {
+    margin-top: 400px;
+}
+
+.right-image img:nth-of-type(2) {
+    margin-top: 250px;
+}
+
+
+
+.right-image img:nth-of-type(3) {
+    margin-top: 400px;
 }
 
 .character-photo {
@@ -733,9 +763,9 @@ margin-left: 10px;
 .info-card {
     margin-top: 18px;
     width: 100%;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 14px;
+    padding: 24px;
+    background-color: #230505;
+    border-radius: 18px;
     opacity: 0;
     transform: translateY(-15px);
     transition: all 0.4s ease;
@@ -743,10 +773,18 @@ margin-left: 10px;
 }
 
 
-.profile:hover .info-card {
+
+.profile.active .info-card {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+
+.profile.active .character-photo {
+    box-shadow:
+        0 0 12px rgba(255, 0, 0, 0.7),
+        0 0 26px rgba(255, 0, 0, 0.5);
+    transform: scale(1.03);
 }
 
 
@@ -759,5 +797,46 @@ margin-left: 10px;
     font-size: 18px;
     line-height: 1.9;
     text-align: justify;
+    margin-top: 40px;
+}
+
+.info-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.favorite-box {
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.favorite-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    color: #ffdede;
+}
+
+.fav-char {
+    width: 140px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow:
+        0 0 12px rgba(200, 0, 0, 0.6),
+        0 0 24px rgba(120, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fav-char:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 18px rgba(255, 0, 0, 0.8),
+        0 0 32px rgba(160, 0, 0, 0.6);
 }
 
