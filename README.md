@@ -98,3 +98,9 @@ Chishiya is a highly intelligent individual, whose observation and critical thin
 
 
 
+
+
+# Q3 Proposal Update
+## Beyond the Border: A Guide to Alice in Borderlands
+
+## Features
