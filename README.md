@@ -115,4 +115,4 @@ or preferences of the users. Before the game starts, there will be a specific fo
 * We'll show the data we collected on the results of the quiz.
 
 ## Definition of "Done":
-Our definition of done is simply when we're finished with all the new features and polished the existing ones. Most importantly, we are satisfied and content with our output, and we're proud to show it to the WORLD!
+Our definition of done is simply when we're finished with all the new features and polished the existing ones. Most importantly, we are satisfied and content with our output, and we're proud to show it to our users!
