@@ -104,3 +104,15 @@ Chishiya is a highly intelligent individual, whose observation and critical thin
 ## Beyond the Border: A Guide to Alice in Borderlands
 
 ## Features
+* Works on both mobile and desktop
+* Complete text and information on all pages
+* At least ONE minigame (e.g., Which AIB Character Are You?, Guess the Character, Snake)
+* Improved design: backgrounds, animations, special effects
+
+## Details
+* We'll utilize HTML forms for one of the minigames -- "Which AIB Character Are You?". It is a personality quiz that is based on the answers
+or preferences of the users. Before the game starts, there will be a specific form where they can input their name. 
+* We'll show the data we collected on the results of the quiz.
+
+## Definition of "Done":
+Our definition of done is simply when we're finished with all the new features and polished the existing ones. Most importantly, we are satisfied and content with our output, and we're proud to show it to the WORLD!
