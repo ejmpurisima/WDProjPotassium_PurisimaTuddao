@@ -873,3 +873,140 @@ margin-left: 10px;
         0 0 32px rgba(160, 0, 0, 0.6);
 }
 
+
+/*quiz style*/
+
+.quiz-container > * {
+  width: 100%;
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#quiz-box,
+.quiz-result {
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(to bottom, #3a0b0b, #1a0505);
+  padding: 40px 45px;
+  border-radius: 22px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+
+
+.quiz-title {
+  font-family: "Manufacturing Consent", serif;
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f5eaea;
+  letter-spacing: 1px;
+}
+
+#question-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f0e6e6;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.options button {
+  padding: 14px 20px;
+  font-size: 16px;
+  background-color: rgba(120, 20, 20, 0.8);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.options button:hover {
+  background-color: rgba(170, 30, 30, 0.9);
+  transform: translateY(-2px);
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.quiz-result h3 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.quiz-result p {
+  font-size: 18px;
+  color: #f0e6e6;
+}
+
+.quiz-section {
+  margin-top: 100px;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.result-name h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #f5eaea;
+  margin: 0;
+  text-align: left;
+}
+
+.result-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.result-description {
+  text-align: left;
+  color: #f0e6e6;
+}
+
+.result-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.result-summary {
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.quiz-result {
+  max-width: 700px;
+  background: linear-gradient(to bottom, #3a0b0b, #1a0505);
+  padding: 45px;
+  border-radius: 22px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
