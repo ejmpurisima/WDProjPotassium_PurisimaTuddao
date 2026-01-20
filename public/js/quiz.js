@@ -48,7 +48,7 @@ A - L Lawliet (Death Note)
 B - Sayori (Doki Doki Literature Club)
 C - Elphaba Thropp (Wicked)
 D - Frontman (Squid Game)
-E - Ice Spice (Mus  ician)
+E - Ice Spice (Musician)
 F - Mahoraga (Jujutsu Kaisen)
 G - Spongebob (Spongebob Squarepants)
 
@@ -64,9 +64,9 @@ G - 55 burgers 55 fries 55 tacos 55 pies
 Q6: What comes after this question?
 A - SSSSSSSIIIIXXXX SSSEEEVEEENNN
 B - The number above six
-C - This is a 67 joke, isn't it
-D - Just put the fries in the bag
-E - KYS
+C - This is a 67 joke, isn't it...
+D - Just put the fries in the bag bro
+E - I hate you
 F - Next question
 G - 67... 
 
@@ -79,6 +79,34 @@ E - i would throw my vape in a cornfield for you
 F - my tears ricochet
 G - Somewhere Only We Know
 
+Q8: How do you sleep at night?
+A - Very comfortable with my Hatsune Miku body pillow
+B - Alone.
+C - Next to my pet rock
+D - How should I know? I'm asleep.
+E - I'd sleep better if you weren't here
+F - With my eyes open
+G - Pretty good!
+
+Q9: Would you buy a Labubu?
+A - LABUBU DUBAI CHOCOLATE BENSON BOONE
+B - It's a waste of money.
+C - Sure...?
+D - They're camp! I would make it a keychain and carry it around.
+E - What is a Labubu???
+F - You are under SPELLS people
+G - They're so unsettling...
+
+Q10: Pick a fatal flaw.
+A - Overly trusting
+B - Paranoia
+C - Excessive pride or overconfidence
+D - Your past
+E - Wrath
+F - Ambition
+G - Feeling of inferiority
+
+Q11: 
 
 */
 
