@@ -1,6 +1,6 @@
 const questions = [
   {
-    text: "Question 1 (placeholder)",
+    text: "",
     options: ["Option A", "Option B", "Option C", "Option D"],
     values: ["A", "B", "C", "D"]
   },
@@ -15,6 +15,16 @@ const questions = [
     values: ["A", "B", "C", "D"]
   }
 ];
+
+/* 
+arisu
+usagi
+chishiya
+kuina
+niragi
+ann
+tatta
+*/
 
 let currentQuestion = 0;
 let scores = { A: 0, B: 0, C: 0, D: 0 };
