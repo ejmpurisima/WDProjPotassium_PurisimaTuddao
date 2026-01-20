@@ -16,6 +16,52 @@ const questions = [
   }
 ];
 
+/* 
+arisu
+usagi
+chishiya
+kuina
+niragi
+ann
+tatta
+
+Q2: What would you do during an argument?
+A - *Calmly tries to make a point*
+B - *Stands up for themselves*
+C - *Knows you're wrong but doesn't care enough to say it*
+D - "I need a cigarette" 
+E - "OH YEAH?" *says 15 slurs*
+F - "I don't have time for this"
+G - *Gives up*
+
+Q3: If I was a worm, would you still love me?
+A - Um... maybe...?
+B - Yes :) !
+C - I guess bro
+D - I would eat you like the fish
+E - Absolutely not what are you on
+F - Why are you like this
+G - I would build you a home in a jar and talk to you every day <3
+
+Q4: Pick a random person. Choose wisely.
+A - L Lawliet (Death Note)
+B - Sayori (Doki Doki Literature Club)
+C - Elphaba Thropp (Wicked)
+D - Frontman (Squid Game)
+E - Ice Spice (Musician)
+F - Judas (The Bible)
+G - Spongebob (Spongebob Squarepants)
+
+Q5: Which of our vocal stims are you?
+A - beefin with my chick while i'm in jail
+B - WHEEERE HAVE YOU BEEEN ALL MY LAIAIF
+C - the biggest beef steak
+D - 1 2 123 RELEASE EM
+E - no baby.. i know dada...
+F - did i just catch a lil bit of attitude
+G - 55 burgers 55 fries 55 tacos 55 pies
+*/
+
 let currentQuestion = 0;
 let scores = { Arisu: 0, Usagi: 0, Chishiya: 0, Kuina: 0, Niragi: 0, Ann: 0, Tatta: 0 };
 
