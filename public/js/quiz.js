@@ -28,7 +28,7 @@ tatta
 Q2: What would you do during an argument?
 A - *Calmly tries to make a point*
 B - *Stands up for themselves*
-C - *Knows you're wrong but doesn't care enough*
+C - *Knows you're wrong but doesn't care enough to say it*
 D - "I need a cigarette" 
 E - "OH YEAH?" *says 15 slurs*
 F - "I don't have time for this"
@@ -52,7 +52,14 @@ E - Ice Spice (Musician)
 F - Judas (The Bible)
 G - Spongebob (Spongebob Squarepants)
 
-Q5: 
+Q5: Which of our vocal stims are you?
+A - beefin with my chick while i'm in jail
+B - WHEEERE HAVE YOU BEEEN ALL MY LAIAIF
+C - the biggest beef steak
+D - 1 2 123 RELEASE EM
+E - no baby.. i know dada...
+F - did i just catch a lil bit of attitude
+G - 55 burgers 55 fries 55 tacos 55 pies
 */
 
 let currentQuestion = 0;
