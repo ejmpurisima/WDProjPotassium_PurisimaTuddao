@@ -70,14 +70,16 @@ E - KYS
 F - Next question
 G - 67... 
 
-Q7: What The CLIQUE moment are you?
-A - 
-B - 
-C - 
-D - "what's your bmi" "enfp"
-E - 
-F - "i genuinely feel the need to hurt my math teacher"
-G -
+Q7: Pick a random song title.
+A - Teenage Dirtbag
+B - You'll Find Lovers Like You and Me
+C - You've Lost A Lot of Blood
+D - There She Goes
+E - i would throw my vape in a cornfield for you
+F - my tears ricochet
+G - Somewhere Only We Know
+
+
 */
 
 let currentQuestion = 0;
