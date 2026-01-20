@@ -48,8 +48,8 @@ A - L Lawliet (Death Note)
 B - Sayori (Doki Doki Literature Club)
 C - Elphaba Thropp (Wicked)
 D - Frontman (Squid Game)
-E - Ice Spice (Musician)
-F - Judas (The Bible)
+E - Ice Spice (Mus  ician)
+F - Mahoraga (Jujutsu Kaisen)
 G - Spongebob (Spongebob Squarepants)
 
 Q5: Which of our vocal stims are you?
@@ -57,9 +57,27 @@ A - beefin with my chick while i'm in jail
 B - WHEEERE HAVE YOU BEEEN ALL MY LAIAIF
 C - the biggest beef steak
 D - 1 2 123 RELEASE EM
-E - no baby.. i know dada...
+E - no baby.. like i know dada...
 F - did i just catch a lil bit of attitude
 G - 55 burgers 55 fries 55 tacos 55 pies
+
+Q6: What comes after this question?
+A - SSSSSSSIIIIXXXX SSSEEEVEEENNN
+B - The number above six
+C - This is a 67 joke, isn't it
+D - Just put the fries in the bag
+E - KYS
+F - Next question
+G - 67... 
+
+Q7: What The CLIQUE moment are you?
+A - 
+B - 
+C - 
+D - "what's your bmi" "enfp"
+E - 
+F - "i genuinely feel the need to hurt my math teacher"
+G -
 */
 
 let currentQuestion = 0;
