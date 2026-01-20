@@ -75,7 +75,7 @@ A - Teenage Dirtbag
 B - You'll Find Lovers Like You and Me
 C - You've Lost A Lot of Blood
 D - There She Goes
-E - i would throw my vape in a cornfield for you
+E - I Don't Care If You're Contagious
 F - my tears ricochet
 G - Somewhere Only We Know
 
@@ -106,7 +106,23 @@ E - Wrath
 F - Ambition
 G - Feeling of inferiority
 
-Q11: 
+Q11: What would you do if when you okay so he said yes would go?
+A - I had a stroke reading this
+B - Um.. I'd tell him, god bless him
+C - Did you take your meds today?
+D - Legends lang nakakaalam
+E - Genuinely what are you on 
+F - ??????
+G - I don't know what you mean there babes
+
+Q12: What AO3 tag are you?
+A - "Hurt/Comfort"
+B - "Horsemen of the Apocalypse"
+C - "a disaster"
+D - "Found family"
+E - "no beta we die like men"
+F - "i thought angst would be funny and it was"
+G - "Major Character Death"
 
 */
 
