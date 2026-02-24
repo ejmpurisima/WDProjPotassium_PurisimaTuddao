@@ -19,6 +19,14 @@ header img {
     font-weight: 300;
     letter-spacing: 3px;
     text-align: center;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px rgb(0, 0, 0), /* The main glow color */
+    0 0 30px rgb(255, 0, 0),
+    0 0 40px rgb(255, 0, 0),
+    0 0 50px rgb(155, 0, 0),
+    0 0 60px rgb(155, 0, 0);
 
     margin-top: 40px;
     margin-left: 37px;
@@ -59,7 +67,7 @@ body {
     margin: 0;            
     text-align: center;
 
-    background-image: url('background 1.png');
+    background-image: url('public/background_1.png');
     background-size: cover;
     background-color: #400808;
 
@@ -71,7 +79,7 @@ body {
 
 
 .desc-text {
-    font-family: 'STIX Two Text', 'Times New Roman', sans-serif;
+    font-family: 'Inconsolata', 'Times New Roman', sans-serif;
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 40px;
@@ -168,7 +176,6 @@ div.text-box > p {
 /* menu stuff */
 .topbar {
     position: fixed; 
-    /* background-color: #400808;      */
     top: 0;         
     left: 0;
     width: 100%;
@@ -180,6 +187,7 @@ div.text-box > p {
     z-index: 9999;
 
     background-image: url('public/navbar.png'); 
+    opacity: 0.95;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -201,7 +209,7 @@ div.text-box > p {
 .menu-button {
     position: fixed; 
     left: 20px;
-    top: 25px;
+    top: 13px;
     height: 50px;
     cursor: pointer;
     z-index: 999999999;
@@ -251,7 +259,9 @@ div.text-box > p {
     margin: -10px auto;
     cursor: pointer;
     transition: filter 0.4s ease, transform 0.4s ease;
+
 }
+
 
 .menu-icon:hover {
     filter:
