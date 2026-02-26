@@ -3,7 +3,7 @@
 <head>
     <title> Beyond the Border: A Guide to Alice in Borderland </title>
     <link rel="icon" type="image/x-icon" href="others/clubs.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400..700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <img src="./others/Joker_29.png" class="drawer-close" onclick="closeMenu()">
         <span id="menuLabel" class="menu-label">MENU</span>
 
-<a href="index.html" class="icon-link" data-label="Home">
+<a href="../index.html" class="icon-link" data-label="Home">
     <img src="./others/home.png" class="menu-icon">
 </a>
 
@@ -66,31 +66,31 @@
     </a>
 </div>
 
-     <div class="main-content-box">
+    <div class="slider-wrapper" style="position: relative; max-width: 900px; margin: 80px auto;">
+    
+    <button class="char-arrow left-arrow" onclick="prevChar()">&#10094;</button>
+    <button class="char-arrow right-arrow" onclick="nextChar()">&#10095;</button>
 
-    <div class="content-wrapper">
-        <div class="left-text">
-            <h1 class="welcome">Kuina Hikari</h1>
-            <p class="desc"> Hikari Kuina (水鶏 光, Kuina Hikari) is a major character in Alice in Borderland. She was a former Clubs specialist but is currently a Spades.  </p>
-            <p class="desc"> To see more of Kuina's information, head to Spades Specialists.</p>
+    <div class="main-content-box">
+        <div class="character-slider">
 
-            <h1 class="welcome"> Gunji Kyuma</h1>
-            <p class="desc">Ginji Kyuma (久間欣治, Kyuuma Ginji) is a supporting character in Alice in Borderland. He is a Citizen who serves as 
-            King of Clubs in the Borderland. He is played by Tomohisa Yamashita. Kyuma is a tall, middle-aged man with a slightly muscular build.
-            He has shoulder length black hair and brown eyes. In the show, he appears nude with no shirt or pants, which makes his teammates and the players uncomfortable.</p><br>
+            <div class="character-slide active">
+                <h1 class="welcome">Kuina Hikari</h1>
+                <p class="desc">Hikari Kuina (水鶏 光, Kuina Hikari) is a major character in Alice in Borderland. She was a former Clubs specialist but is currently a Spades.</p>
+                <p class="desc">To see more of Kuina's information, head to Spades Specialists.</p>
+                <img src="./characs/kuina.jpg" class="character-photo">
+            </div>
 
-        <p class="desc">In reality, he actually takes pride in presenting nude and claims that wearing clothes is a social construct. Kyuma claims that nudists
-            have been around for many years and that clothes are just another way to oppress people. However, as seen in the game, Kyuma is actually a good leader.
-            He treats his teammates with respect and distributes their points equally in the game. </p>
+            <div class="character-slide">
+                <h1 class="welcome">Gunji Kyuma</h1>
+                <p class="desc">Ginji Kyuma (久間欣治, Kyuuma Ginji) is a supporting character in Alice in Borderland. He is a Citizen who serves as King of Clubs in the Borderland. He is played by Tomohisa Yamashita. Kyuma is a tall, middle-aged man with a slightly muscular build. He has shoulder length black hair and brown eyes. In the show, he appears nude with no shirt or pants, which makes his teammates and the players uncomfortable.</p>
+                <p class="desc">In reality, he actually takes pride in presenting nude and claims that wearing clothes is a social construct. Kyuma claims that nudists have been around for many years and that clothes are just another way to oppress people. However, as seen in the game, Kyuma is actually a good leader. He treats his teammates with respect and distributes their points equally in the game.</p>
+                <img src="./characs/kyuma.jpg" class="character-photo">
+            </div>
 
-    </div>
-
-        <div class="right-image">
-            <img src="./characs/kuina.jpg" alt="Character" class="character-photo">
-             <img src="./characs/kyuma.jpg" alt="Character" class="character-photo">
         </div>
     </div>
-    </div>
+</div>
 
 <footer class="site-footer">
     <div class="footer-content">
@@ -100,5 +100,7 @@
 </footer>
 
   <script src="js/menu.js"></script>
+  <script src="../js/menu.js"></script>
+<script src="./js/slider.js"></script>
 </body>
 </html>

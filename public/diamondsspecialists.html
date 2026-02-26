@@ -3,7 +3,7 @@
 <head>
     <title> Beyond the Border: A Guide to Alice in Borderland </title>
     <link rel="icon" type="image/x-icon" href="others/clubs.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400..700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <img src="./others/Joker_29.png" class="drawer-close" onclick="closeMenu()">
         <span id="menuLabel" class="menu-label">MENU</span>
 
-<a href="index.html" class="icon-link" data-label="Home">
+<a href="../index.html" class="icon-link" data-label="Home">
     <img src="./others/home.png" class="menu-icon">
 </a>
 
@@ -66,25 +66,26 @@
     </a>
 </div>
 
+     <div class="slider-wrapper" style="position: relative; max-width: 900px; margin: 80px auto;">
+    
+    <button class="char-arrow left-arrow" onclick="prevChar()">&#10094;</button>
+    <button class="char-arrow right-arrow" onclick="nextChar()">&#10095;</button>
+
     <div class="main-content-box">
+        <div class="character-slider">
 
-    <div class="content-wrapper">
-        <div class="left-text">
-            <h1 class="welcome">Chishiya Shuntaro</h1>
-            <p class="desc">  Shuntaro Chishiya (苣屋 駿太郎, Chishiya Shuntarou) is a major character in Alice in Borderland. He is played by Nijiro Murakami. His specialty is not clearly stated in the show, however, his promotional poster hints at Hearts, while the original manga character specializes in Diamonds. Chishiya has dyed platinum blonde hair that reaches his shoulders and a tiny mole under his eye. 
-                His outfit include an unzipped white jacket and white beach shorts. At the beginning of the Second Stage, he changes his clothes to a dark gray T-shirt, white joggers, and a long two-tone cardigan. </p>
-<br>
-
- <p class="desc">Chishiya is a highly intelligent individual, whose observation and critical thinking skills prove advantageous in most situations, making him survive all types of games. He remains calm and nonchalant under any circumstances and analyzes the situation with a small smirk on his face as he tries to find a solution. According to Niragi, his eyes are "irritatingly condescending". Chishiya has a sharp tongue and only selects people he tolerates. 
+            <div class="character-slide active">
+                <h1 class="welcome">Chishiya Shuntaro</h1>
+                <p class="desc">Shuntaro Chishiya (苣屋 駿太郎, Chishiya Shuntarou) is a major character in Alice in Borderland. He is played by Nijiro Murakami. His specialty is not clearly stated in the show, however, his promotional poster hints at Hearts, while the original manga character specializes in Diamonds. Chishiya has dyed platinum blonde hair that reaches his shoulders and a tiny mole under his eye. 
+                His outfit include an unzipped white jacket and white beach shorts. At the beginning of the Second Stage, he changes his clothes to a dark gray T-shirt, white joggers, and a long two-tone cardigan.</p>
+                <p class="desc">Chishiya is a highly intelligent individual, whose observation and critical thinking skills prove advantageous in most situations, making him survive all types of games. He remains calm and nonchalant under any circumstances and analyzes the situation with a small smirk on his face as he tries to find a solution. According to Niragi, his eyes are "irritatingly condescending". Chishiya has a sharp tongue and only selects people he tolerates. 
     He has openly admitted to being clever multiple times, not trying to be boastful, but just staying true.</p>
-            
-    </div>
+                <img src="./characs/chishiya.jpg" class="character-photo">
+            </div>
 
-        <div class="right-image">
-            <img src="./characs/chishiya.jpg" alt="Character" class="character-photo">
         </div>
     </div>
-    </div>
+</div>
 
 <footer class="site-footer">
     <div class="footer-content">
@@ -94,5 +95,7 @@
 </footer>
 
 <script src="js/menu.js"></script>
+  <script src="../js/menu.js"></script>
+<script src="./js/slider.js"></script>
 </body>
 </html>
