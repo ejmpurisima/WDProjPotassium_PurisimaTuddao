@@ -1281,3 +1281,100 @@ margin-left: 10px;
     }
 }
 
+/*netflix only games*/
+
+.netflix-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.netflix-glow-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Manufacturing Consent', sans-serif;
+    letter-spacing: 3px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(255, 0, 0),
+        0 0 30px rgb(255, 0, 0),
+        0 0 40px rgb(155, 0, 0);
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.section-divider {
+    text-align: center;
+    border-bottom: 3px solid #b30000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: 'Gelasio', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.mini-game-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(60, 10, 10, 0.7);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.mini-game-card:hover {
+    background: rgba(80, 15, 15, 0.9);
+    border-color: #ff0000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.mini-game-info h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Gelasio', serif;
+    color: #ffffff;
+}
+
+
+.mini-game-media {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.mini-card {
+    width: 65px; 
+    height: 90px;
+    object-fit: contain;
+    background: #fff; 
+    border-radius: 4px;
+}
+
+.mini-venue {
+    width: 180px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #444;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mini-game-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .mini-game-media {
+        width: 100%;
+        justify-content: center;
+    }
+}
