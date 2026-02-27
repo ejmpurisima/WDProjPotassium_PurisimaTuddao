@@ -163,6 +163,26 @@ G - "Major Character Death"
 
 */
 
+/*
+charac desc
+
+Arisu: you and arisu are like this 🤞 your friends LOVE you and you maybe have a hero complex. don't drink any more caffeine and make sure you get some sleep. it's hard being so smart all the time, right?
+you are incredibly understanding and such a good problem solver. you also tend to put people before yourself. but mostly, you're chronically online.
+
+Usagi: congrats, you got usagi! you're chill but also quite emotional. you like hobbies that get your mind out of the gutter like how she enjoys mountain climbing.
+
+Chishiya: contact me on my discord
+
+Kuina: legends lang nakakaalam at legend ka pala
+
+Niragi: you are witewawi niragi
+
+Ann: ur a smart and independent person...?
+
+Tatta: bros life is just sunshine and rainbows
+
+*/
+
 let currentQuestion = 0;
 
 let scores = {
