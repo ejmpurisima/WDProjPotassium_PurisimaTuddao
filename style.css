@@ -1255,12 +1255,24 @@ margin-left: 10px;
 .falling-card {
     position: absolute;
     top: -100px;
-    opacity: 0.25;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    opacity: 0.2;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
     animation: fall linear forwards;
 }
 
 @keyframes fall {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(110vh) rotate(360deg); }
+    0% { 
+        transform: translateY(0) rotate(0deg); 
+        opacity: 0;
+    }
+    10% { 
+        opacity: 0.2;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% { 
+        transform: translateY(110vh) rotate(360deg); 
+        opacity: 0;
+    }
 }

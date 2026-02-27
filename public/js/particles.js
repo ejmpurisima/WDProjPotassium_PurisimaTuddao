@@ -14,29 +14,38 @@ window.onload = function() {
         card.src = cards[Math.floor(Math.random() * cards.length)];
         card.classList.add('falling-card');
         
-        
-        const sideGutterWidth = window.innerWidth * 0.20; 
+       
+        const totalWidth = window.innerWidth;
+        const sideWidth = totalWidth * 0.25;
         let startPos;
 
-        if (Math.random() < 0.5) {
-           
-            startPos = Math.random() * sideGutterWidth;
+        const spawnChance = Math.random();
+
+        if (spawnChance < 0.4) {
+          
+            startPos = Math.random() * sideWidth;
+        } else if (spawnChance < 0.8) {
+          
+            startPos = (totalWidth - sideWidth) + (Math.random() * sideWidth);
         } else {
           
-            startPos = (window.innerWidth - sideGutterWidth) + (Math.random() * sideGutterWidth);
+            startPos = sideWidth + (Math.random() * (totalWidth - (sideWidth * 2)));
         }
+    
+        const duration = Math.random() * 5 + 5; 
+        const size = Math.random() * 15 + 25; 
         
-        const duration = Math.random() * 4 + 6; 
-        const size = Math.random() * 15 + 25;
-        
-        card.style.left = (startPos - 20) + 'px'; 
+        card.style.left = startPos + 'px';
         card.style.animationDuration = duration + 's';
         card.style.width = size + 'px';
         
+      
+        card.style.transform = `rotate(${Math.random() * 360}deg)`;
+
         container.appendChild(card);
         setTimeout(() => { card.remove(); }, duration * 1000);
     }
 
    
-    setInterval(createCard, 300); 
+    setInterval(createCard, 350); 
 };
