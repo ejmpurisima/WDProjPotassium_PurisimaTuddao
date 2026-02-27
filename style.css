@@ -48,8 +48,8 @@ h1 {
 
 .main-content-box {
     max-width: 900px;
-    margin: 80px auto;
-    padding: 80px 60px;
+    margin-top: 110px !important;
+    padding: 20px 60px 60px 60px;
 
     background: rgba(39, 7, 7, 0.85); 
     backdrop-filter: blur(6px);
