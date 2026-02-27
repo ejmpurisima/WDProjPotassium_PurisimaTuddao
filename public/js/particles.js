@@ -33,7 +33,7 @@ window.onload = function() {
         }
     
         const duration = Math.random() * 5 + 5; 
-        const size = Math.random() * 15 + 25; 
+        const size = Math.random() * 30 + 40; 
         
         card.style.left = startPos + 'px';
         card.style.animationDuration = duration + 's';
