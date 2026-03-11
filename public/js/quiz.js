@@ -62,8 +62,7 @@ const questions = [
   
 ];
 
-/* 
-arisu
+/* arisu
 usagi
 chishiya
 kuina
@@ -196,17 +195,48 @@ let scores = {
 };
 
 const quizBox = document.getElementById("quiz-box");
-const questionText = document.getElementById("question-text");
-const optionButtons = document.querySelectorAll(".options button");
 const resultDiv = document.getElementById("result");
+const backBtn = document.getElementById("back-btn");
+
+
+const nameSection = document.getElementById("name-input-section");
+const quizContent = document.getElementById("quiz-content");
+const actualQuestionText = document.getElementById("actual-question-text");
+const optionsContainer = document.querySelector("#quiz-content .options");
+
+
+function saveNameAndStart() {
+    const nameVal = document.getElementById("user-name-input").value;
+    if (nameVal.trim() === "") {
+        alert("Please enter a name to proceed.");
+        return;
+    }
+    
+  
+    localStorage.setItem("playerName", nameVal);
+
+   
+    nameSection.classList.add("hidden");
+    quizContent.classList.remove("hidden");
+  
+    backBtn.style.display = "flex";
+
+    loadQuestion();
+}
 
 function loadQuestion() {
   const q = questions[currentQuestion];
-  questionText.textContent = q.text;
+  actualQuestionText.textContent = q.text;
 
-  optionButtons.forEach((btn, index) => {
-    btn.textContent = q.options[index];
+
+  optionsContainer.innerHTML = "";
+
+
+  q.options.forEach((opt, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = opt;
     btn.onclick = () => selectAnswer(index);
+    optionsContainer.appendChild(btn);
   });
 }
 
@@ -232,184 +262,61 @@ function showResult() {
   quizBox.classList.add("hidden");
   backBtn.style.display = "none";
 
- 
+  const playerName = localStorage.getItem("playerName") || "Player";
   const maxScore = Math.max(...Object.values(scores));
-
-
-  const topCharacters = Object.keys(scores).filter(
-    char => scores[char] === maxScore
-  );
-
- 
-  const highest =
-    topCharacters[Math.floor(Math.random() * topCharacters.length)];
+  const topCharacters = Object.keys(scores).filter(char => scores[char] === maxScore);
+  const highest = topCharacters[Math.floor(Math.random() * topCharacters.length)];
 
   let resultHTML = "";
 
-  switch (highest) {
-    case "Arisu":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Arisu</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/arisu.jpg" alt="Arisu">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
+  const charDescs = {
+    Arisu: "you and arisu are like this 🤞 your friends LOVE you and you maybe have a hero complex. don't drink any more caffeine and make sure you get some sleep. it's hard being so smart all the time, right? you are incredibly understanding and such a good problem solver. you also tend to put people before yourself. but mostly, you're chronically online.",
+    Usagi: "congrats, you got usagi! you're chill but also quite emotional. you like hobbies that get your mind out of the gutter like how she enjoys mountain climbing.",
+    Chishiya: "contact me on my discord",
+    Kuina: "legends lang nakakaalam at legend ka pala",
+    Niragi: "you are witewawi niragi",
+    Ann: "ur a smart and independent person...?",
+    Tatta: "bros life is just sunshine and rainbows"
+  };
 
-    case "Usagi":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Usagi</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/usagi.jpg" alt="Usagi">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-
-    case "Chishiya":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Chishiya</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/chishiya.jpg" alt="Chishiya">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-
-    case "Kuina":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Kuina</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/kuina.jpg" alt="Kuina">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-
-    case "Niragi":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Niragi</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/niragi.jpg" alt="Niragi">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-
-    case "Ann":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Ann</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/ann.jpg" alt="Ann">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-
-    case "Tatta":
-      resultHTML = `
-        <div class="result-header">
-          <div class="result-name">
-            <h3>Tatta</h3>
-          </div>
-          <div class="result-image">
-            <img src="characs/tatta.jpg" alt="Tatta">
-          </div>
-        </div>
-        <div class="result-description">
-          <p>u are literally niragi.</p>
-          <p class="result-summary">oh skibidiii</p>
-        </div>
-        <button id="restart-btn" class="restart-btn">Restart Quiz</button>
-      `;
-      break;
-  }
+  resultHTML = `
+    <div class="result-header">
+      <div class="result-name">
+        <h3>${playerName}, you are ${highest}</h3>
+      </div>
+      <div class="result-image">
+        <img src="characs/${highest.toLowerCase()}.jpg" alt="${highest}">
+      </div>
+    </div>
+    <div class="result-description">
+      <p>${charDescs[highest]}</p>
+      <p class="result-summary">oh skibidiii</p>
+    </div>
+    <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+  `;
 
   resultDiv.innerHTML = resultHTML;
   resultDiv.classList.remove("hidden");
 }
 
-loadQuestion();
-
-
 document.addEventListener("click", function(e) {
   if (e.target && e.target.id === "restart-btn") {
-
     currentQuestion = 0;
-
+    for (let key in scores) { scores[key] = 0; }
     
-    for (let key in scores) {
-      scores[key] = 0;
-    }
-
-
     resultDiv.classList.add("hidden");
     quizBox.classList.remove("hidden");
     quizBox.classList.remove("fade-out");
 
-   
-    backBtn.style.display = "flex";
 
-    
-    loadQuestion();
+    nameSection.classList.remove("hidden");
+    quizContent.classList.add("hidden");
+    backBtn.style.display = "none";
   }
 });
 
-
-const backBtn = document.getElementById("back-btn");
-
 backBtn.addEventListener("click", () => {
   if (currentQuestion > 0) {
-    backBtn.style.display = "flex";
     quizBox.classList.add("fade-out"); 
     setTimeout(() => {
       currentQuestion--;
@@ -419,6 +326,3 @@ backBtn.addEventListener("click", () => {
     }, 400);
   }
 });
-
-
-
