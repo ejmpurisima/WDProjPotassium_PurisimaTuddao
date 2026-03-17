@@ -116,3 +116,9 @@ or preferences of the users. Before the game starts, there will be a specific fo
 
 ## Definition of "Done":
 Our definition of done is simply when we're finished with all the new features and polished the existing ones. Most importantly, we are satisfied and content with our output, and we're proud to show it to our users!
+
+
+# FINAL MODIFICATION PROPOSAL
+New feature: Episode Rating
+
+The purpose of this is to let users review any episode in Alice in Borderland (1-5 stars) and have a recorded list of all their reviews. The user can update their list any time as well as delete any reviews they've already submitted if they change their mind. (CRUD)
