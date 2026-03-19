@@ -121,4 +121,7 @@ Our definition of done is simply when we're finished with all the new features a
 # FINAL MODIFICATION PROPOSAL
 New feature: Episode Rating
 
-The purpose of this is to let users review any episode in Alice in Borderland (1-5 stars) and have a recorded list of all their reviews. The user can update their list any time as well as delete any reviews they've already submitted if they change their mind. (CRUD)
+CRUD: The purpose of this is to let users review any episode in Alice in Borderland (1-5 stars) and have a recorded list of all their reviews. The user can update their list any time as well as delete any reviews they've already submitted if they change their mind.
+
+## Wireframe of Episode Rating:
+![Episode_Rating](assets/CS3%20Project%20Alice%20in%20Borderland.png)
