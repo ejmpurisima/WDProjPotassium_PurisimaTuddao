@@ -21,7 +21,7 @@ const questions = [
   },
    {
     text: "Q5: Which of our vocal stims are you?",
-    options: ["55 burgers 55 fries 55 tacos 55 pies", "the biggest beef steak", "WHEEERE HAVE YOU BEEEN ALL MY LAIAIF", "1 2 123 RELEASE EM", "no baby.. i know dada...", "did i just catch a lil bit of attitude","beefin with my chick while i'm in jail"],
+    options: ["55 burgers 55 fries 55 tacos 55 pies", "the biggest beef steak", "WHEEERE HAVE YOU BEEEN ALL MY LAIAIF", "1 2 123 RELEASE EM", "let me write tha down...", "did i just catch a lil bit of attitude","beefin with my chick while i'm in jail"],
     values: ["Tatta", "Chishiya", "Usagi", "Kuina", "Niragi", "Ann", "Arisu"]
   },
     {
@@ -170,13 +170,13 @@ you are incredibly understanding and such a good problem solver. you also tend t
 
 Usagi: congrats, you got usagi! you're chill but also quite emotional. you like hobbies that get your mind out of the gutter like how she enjoys mountain climbing.
 
-Chishiya: contact me on my discord
+Chishiya: contact me on my discord @euoniase (- erin)
 
-Kuina: legends lang nakakaalam at legend ka pala
+Kuina: legends lang nakakaalam at legend ka pala ❤️ you're the coolest and you think you're nonchalant but you're not and it's okay!
 
-Niragi: you are witewawi niragi
+Niragi: you are witewawi niragi. no comment u got literally the worst character in the entire show. yes, the website developers are laughing at u and we put this on purpose. better luck next time
 
-Ann: ur a smart and independent person...?
+Ann: you are exactly who you think you are and yes you're the alpha of this pack. you're too mysterious and you keep to yourself too much. 
 
 Tatta: bros life is just sunshine and rainbows
 
