@@ -273,9 +273,9 @@ function showResult() {
     Arisu: "you and arisu are like this 🤞 your friends LOVE you and you maybe have a hero complex. don't drink any more caffeine and make sure you get some sleep. it's hard being so smart all the time, right? you are incredibly understanding and such a good problem solver. you also tend to put people before yourself. but mostly, you're chronically online.",
     Usagi: "congrats, you got usagi! you're chill but also quite emotional. you like hobbies that get your mind out of the gutter like how she enjoys mountain climbing.",
     Chishiya: "contact me on my discord",
-    Kuina: "legends lang nakakaalam at legend ka pala",
-    Niragi: "you are witewawi niragi",
-    Ann: "ur a smart and independent person...?",
+    Kuina: "legends lang nakakaalam at legend ka pala ❤️ you're the coolest and you think you're nonchalant but you're not and it's okay!",
+    Niragi: "you are witewawi niragi. no comment u got literally the worst character in the entire show. yes, the website developers are laughing at u and we put this on purpose. better luck next time",
+    Ann: "you are exactly who you think you are and yes you're the alpha of this pack. you're too mysterious and you keep to yourself too much. ",
     Tatta: "bros life is just sunshine and rainbows"
   };
 
