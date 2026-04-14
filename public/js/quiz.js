@@ -274,10 +274,10 @@ function showResult() {
     Arisu: "you and arisu are like this 🤞 your friends LOVE you and you maybe have a hero complex. don't drink any more caffeine and make sure you get some sleep. it's hard being so smart all the time, right? you are incredibly understanding and such a good problem solver. you also tend to put people before yourself. but mostly, you're chronically online.",
     Usagi: "congrats, you got usagi! you're chill but also quite emotional. you like hobbies that get your mind out of the gutter like how she enjoys mountain climbing.",
     Chishiya: "oh, so you think you're cool and nonchalant? you either (1) forced your answers to purposely get chishiya or (2) picked the most neutral and boring answers. you're smart, yes, maybe even a little too smart. you also probably have bad trust issues and don't have a good perception of yourself. you also probably have bad trust issues and don't have a good perception of yourself. don't think about everything too much. always remember that sometimes, it's better to be kind than to be right. ",
-    Kuina: "legends lang nakakaalam at legend ka pala ❤️ you have GREAT style, taste, and humor. you're also very open-minded, but you find it hard to forget or accept your past. as a whole, you're a genuine and friendly person. the creators would love u btw",
+    Kuina: "legends lang nakakaalam at legend ka pala ❤️ you have GREAT style, taste, and humor. you're also very open-minded, but you find it hard to forget or accept your past. as a whole, you're a genuine and friendly person. the creators would love u by the way",
     Niragi: "you are witewawi niragi. no comment u got literally the worst character in the entire show. yes, the website developers are laughing at u and we put this on purpose. better luck next time",
-    Ann: "you are exactly who you think you are and yes you're the alpha of this pack. you're too mysterious and you keep to yourself too much. ",
-    Tatta: "bros life is just sunshine and rainbows"
+    Ann: "you are exactly who you think you are and yes you're an alpha. you pick your teammates or your friends carefully, but you always make a good choice. as a person, you are very ambitious and will do (almost) everything to reach your goals. you may seem cold at first, but you're actually a very caring person in general. :)",
+    Tatta: "bros life is just sunshine and rainbows. you're a very selfless person and would prioritize others before you. you're also a great person to be with in trying times. you're soft-hearted, and we think you should stay like that forevermore!!!"
   };
 
   resultHTML = `
