@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(cinema.jpg);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            background: rgba(73, 14, 14, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2, h3 { text-align: center; color: #ffffff; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; color:#ffffff}
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .stars {
+            font-size: 24px;
+            cursor: pointer;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        .star.selected { color: #ffcc00; }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #78c0d8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #4366d6; }
+
+        #movieList { margin-top: 20px; }
+        .movie-item {
+            background: #fafafa;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .yellow-text { color: #ffcc00; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Add a Movie</h2>
+    
+    <div class="form-group">
+        <label>Title:</label>
+        <input type="text" id="title" placeholder="Enter movie title">
+    </div>
+
+    <div class="form-group">
+        <label>Year:</label>
+        <input type="number" id="year" placeholder="2026">
+    </div>
+
+  <div class="form-group">
+    <label>Genre:</label>
+    <select id="genre">
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        
+        <option value="Horror">Horror</option>
+        <option value="Romance">Romance</option>
+        <option value="Documentary">Documentary</option>
+        <option value="Animation">Animation</option>
+        <option value="Thriller">Thriller</option>
+    </select>
+</div>
+
+    <label>Rating:</label>
+    <div class="stars" id="starContainer">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+    </div>
+
+    <button onclick="addMovie()">Add Movie</button>
+
+    <hr>
+    <h3>Movie List</h3>
+    <div id="movieList"></div>
+</div>
+
+<script>
+    let currentRating = 0;
+    const stars = document.querySelectorAll('.star');
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            currentRating = star.getAttribute('data-value');
+            updateStars(currentRating);
+        });
+    });
+
+    function updateStars(rating) {
+        stars.forEach(star => {
+            star.classList.toggle('selected', star.getAttribute('data-value') <= rating);
+        });
+    }
+
+     function addMovie() {
+        const title = document.getElementById('title').value;
+        const year = document.getElementById('year').value;
+        const genre = document.getElementById('genre').value;
+
+        if(!title || !year || currentRating === 0) {
+            alert("Please fill in all fields and provide a rating!");
+            return;
+        }
+
+        const newMovie = {
+            title: title,
+            year: Number(year),
+            genre: genre,
+            rating: Number(currentRating),
+            counter: 1,
+        };
+
+        const movies = JSON.parse(localStorage.getItem('movies')) || [];
+        
+        const existingMovie = movies.find(movie => movie.title.toLowerCase() === title.toLowerCase())
+        if (existingMovie){
+            existingMovie.counter += 1;
+            let averageRate = (existingMovie.rating * (existingMovie.counter - 1) + Number(currentRating)) / existingMovie.counter;
+            
+            if (averageRate % 1 >= 0.5){ 
+                existingMovie.rating = Math.ceil(averageRate);
+            }
+            else { existingMovie.rating = Math.floor(averageRate) }
+
+        }
+        else { movies.push(newMovie); }
+
+
+        
+        localStorage.setItem('movies', JSON.stringify(movies));
+        clearForm();
+        displayMov();
+    }
+
+    function clearForm() {
+        document.getElementById('title').value = '';
+        document.getElementById('year').value = '';
+        currentRating = 0;
+        updateStars(0);
+    }
+
+    function displayMov(){
+    const movies = JSON.parse(localStorage.getItem('movies')) || [];
+    const movList = document.getElementById('movieList'); 
+    movList.innerHTML = '';
+
+    movies.forEach((movie, index) => {
+
+        if (typeof movie.title !== "string") return;
+
+        const rating = Number(movie.rating) || 0;
+        const starString = '★'.repeat(rating);
+
+        const movieItem = document.createElement('div');
+        movieItem.className = 'movie-item'; 
+
+        movieItem.innerHTML = `
+            <strong>${movie.title} (${movie.year})</strong> - ${movie.genre}, 
+            Rating: <span class="yellow-text">${starString}</span> <button onclick = "deleteMovie(${index})">Delete</button>
+        `;
+        
+        movList.appendChild(movieItem); 
+    });
+    }
+
+    function deleteMovie(index){
+        if (confirm("Are you sure you want to delete this movie?")){
+            let currentMovies = JSON.parse(localStorage.getItem('movies')) || []
+            currentMovies.splice(index, 1);
+            localStorage.setItem('movies', JSON.stringify(currentMovies));
+
+            displayMov();
+        }
+    }
+
+
+    displayMov();
+
+</script>
+
+</body>
+</html>

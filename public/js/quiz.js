@@ -291,7 +291,7 @@ function showResult() {
     </div>
     <div class="result-description">
       <p>${charDescs[highest]}</p>
-      <p class="result-summary">oh skibidiii</p>
+      <p class="result-summary">Thanks for taking this quiz! Don't forget to hit that subscribe button and turn on notifications if you want more videos like this!</p>
     </div>
     <button id="restart-btn" class="restart-btn">Restart Quiz</button>
   `;
