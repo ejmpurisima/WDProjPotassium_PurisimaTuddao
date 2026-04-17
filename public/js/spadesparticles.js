@@ -5,7 +5,7 @@ window.onload = function() {
     function createCard() {
         const card = document.createElement('img');
         const cards = [
-            'others/hearts.png'
+            'others/spades.png'
         ];
         
         card.src = cards[Math.floor(Math.random() * cards.length)];
